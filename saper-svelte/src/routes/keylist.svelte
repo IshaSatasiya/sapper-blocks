@@ -11,6 +11,7 @@
       font-family: sans-serif;
       text-align: center;
     }
+
 	button{
 		padding: 10px 30px;
 		background-color: #444;
@@ -25,6 +26,7 @@
       <h2>{name}</h2>
       <input placeholder="Last name" />
     {/each}
+    
     <div>
      <button on:click={shuffleNames}>Shuffle!</button>
     </div>
