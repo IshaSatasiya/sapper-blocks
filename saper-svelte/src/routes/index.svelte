@@ -49,6 +49,15 @@
 		color: #fff;
 	}
 
+	.list{
+		list-style: unset;
+		padding: 0;
+	}
+
+	.list a{
+		text-decoration: unset;
+	}
+
 	@media (min-width: 480px) {
 		h1 {
 			font-size: 4em;
@@ -80,7 +89,7 @@
 
 <h1>The Famous Cats of YouTube</h1>
 
-<ul>
+<ul class="list">
 	{#each cats as { id, name }, i}
 		<li>
 			<a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v={id}">
