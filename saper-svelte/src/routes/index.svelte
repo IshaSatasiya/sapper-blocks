@@ -1,4 +1,5 @@
 <script>
+	import Block from './block.svelte';
 	import successkid from 'images/successkid.jpg';
 	let user = { loggedIn: false };
 	function toggle() {
@@ -107,3 +108,5 @@
 	{/each}
 </ul>
 </div>
+
+<Block/>
