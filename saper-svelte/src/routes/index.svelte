@@ -37,6 +37,13 @@
 		text-align: center;
 	}
 
+	button{
+		padding: 10px 30px;
+		background-color: #444;
+		border: 1px solid #444;
+		color: #fff;
+	}
+
 	@media (min-width: 480px) {
 		h1 {
 			font-size: 4em;
