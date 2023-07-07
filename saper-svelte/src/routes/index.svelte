@@ -52,6 +52,14 @@
 	.list{
 		list-style: unset;
 		padding: 0;
+		max-width: 240px;
+		margin: 0 auto;
+	}
+
+	.list li{
+		display: block;
+		padding: 5px 0;
+		text-align: left;
 	}
 
 	.list a{
