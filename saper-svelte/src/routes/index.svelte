@@ -1,5 +1,6 @@
 <script>
 	import Block from './block.svelte';
+	import List from './list.svelte';
 	import successkid from 'images/successkid.jpg';
 	let user = { loggedIn: false };
 	function toggle() {
@@ -53,14 +54,12 @@
 	.list{
 		list-style: unset;
 		padding: 0;
-		max-width: 240px;
-		margin: 0 auto;
 	}
 
 	.list li{
 		display: block;
 		padding: 5px 0;
-		text-align: left;
+		text-align: center;
 	}
 
 	.list a{
@@ -110,3 +109,4 @@
 </div>
 
 <Block/>
+<List/>
