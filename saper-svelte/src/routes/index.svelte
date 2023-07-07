@@ -1,6 +1,7 @@
 <script>
 	import Block from './block.svelte';
 	import List from './list.svelte';
+	import KeyList from './keylist.svelte';
 	import successkid from 'images/successkid.jpg';
 	let user = { loggedIn: false };
 	function toggle() {
@@ -110,3 +111,4 @@
 
 <Block/>
 <List/>
+<KeyList/>
