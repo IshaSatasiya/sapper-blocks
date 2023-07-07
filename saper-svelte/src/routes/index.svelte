@@ -1,5 +1,9 @@
 <script>
 	import successkid from 'images/successkid.jpg';
+	let user = { loggedIn: false };
+	function toggle() {
+		user.loggedIn = !user.loggedIn;
+	}
 </script>
 
 <style>
@@ -29,6 +33,10 @@
 		margin: 1em auto;
 	}
 
+	.text-center{
+		text-align: center;
+	}
+
 	@media (min-width: 480px) {
 		h1 {
 			font-size: 4em;
@@ -47,4 +55,14 @@
 	<figcaption>Have fun with Sapper!</figcaption>
 </figure>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<div class="text-center">
+{#if user.loggedIn}
+	<button on:click={toggle}> Log out </button>
+	<p>you are logged out</p>
+{/if}
+
+{#if !user.loggedIn}
+	<button on:click={toggle}> Log in </button>
+	<p>you are logged in</p>
+{/if}
+</div>
